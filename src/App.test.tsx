@@ -1,21 +1,33 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable react/react-in-jsx-scope */
-/* eslint-disable prettier/prettier */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { describe, it } from "vitest";
-// eslint-disable-next-line prettier/prettier
 import { render, screen } from "@testing-library/react";
-// eslint-disable-next-line import/newline-after-import, import/no-named-as-default
+import { MemoryRouter } from "react-router-dom";
 import App from "./App";
+
 describe ("App", () =>{
-    it("Renders hello world", () => {
+    it("renders Home", () => {
         /// ARRANGE
-        render( <App />);
-        /// ACT
-        /// EXPECT
-        expect(screen.getAllByRole("heading", {
-            level: 1
-        })).toHaveTextContent("Hello WORLD");
+        render( 
+          <MemoryRouter initialEntries={['/home']}>
+            <App />
+          </MemoryRouter>
+          )
+                   
+        expect(screen.getByText("Bonjour!")).toBeInTheDocument(); 
     });
-} );
+    test('renders About',() => {
+        render(
+          <MemoryRouter initialEntries={['/about']}>
+            <App />
+          </MemoryRouter>
+        );
+        expect(screen.getByText('About')).toBeInTheDocument();
+    });
+    test('renders Error404',()=>{
+        render(
+            <MemoryRouter initialEntries={['/non-existent-route']}>
+            <App />
+          </MemoryRouter>
+        );
+        expect(screen.getByText('NotFoundpage Errr 404! Go')).toBeInTheDocument();
+    });
+});

@@ -13,6 +13,7 @@ module.exports = {
     "plugin:prettier/recommended",
   ],
   overrides: [
+    files ['*.spec.ts', 'test/unit/**/*.ts', 'test/e2e/**/*.ts'],
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -26,5 +27,8 @@ module.exports = {
     "prettier",
   ],
   rules: {
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
   }
 }
