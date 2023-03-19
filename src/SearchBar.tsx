@@ -1,5 +1,5 @@
 function SearchBar() {
-    const UsersSearch = (e) => {
+    const UsersSearch = (e: { target: { value: any; }; }) => {
         console.log(e.target.value);
   }
     return(
