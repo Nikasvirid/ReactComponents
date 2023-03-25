@@ -16,14 +16,17 @@ class Iinput extends Component <InputPro, InputSt> {
 
     handleChange: React.ChangeEventHandler<HTMLInputElement> =(e) =>{
         this.setState({input:e.target.value});
-    };
 
+    };
+    
     render() {
        return (
-        <label className="">First name
+                 
+        <label className="labell">
         {this.props.name}
         <input type="text" value={this.state.input}onChange={this.handleChange} />
         </label>
+        
        ) ;
     }
 }

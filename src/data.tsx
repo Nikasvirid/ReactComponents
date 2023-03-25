@@ -124,13 +124,17 @@ export const data: CardProd[] = [
     image: "https://images.unsplash.com/photo-1559334417-a57bd929f003?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjIzfHxzaGlydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
   }
 ];
-export const texts = [
-  {
-    text1: "female",
-    text2: "masculine",
-    text3: "nauter",
-    value1: "female",
-    value2: "masculine",
-    value3: "nauter"
-  }
+export const gender = [
+  
+    "female",
+    "masculine",
+   "nauter",
+];
+
+export const experience = [
+  
+    "junior",
+    "middle",
+    "senior"
+
 ];

@@ -50,3 +50,33 @@ nav {
     flex-grow: 1;
     flex-basis: 16%;
   }
+
+  .labell {
+    display: flex;
+    flex-direction: column;   
+    width: 50%;
+    gap: 0.5em;
+    font-size: 20px;    
+  }
+
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    background-color: #eeb8ef;
+    width: 50%;
+    gap: 0.3em;
+  }
+
+  .submit {
+    background-color: rgb(244, 220, 112);
+    width: 15%;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+
+
+ 

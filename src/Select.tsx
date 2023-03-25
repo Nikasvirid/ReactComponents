@@ -22,7 +22,7 @@ class Select extends Component <SelectPro,SelectSt> {
 
     render(){
         return(
-            <label>{this.props.name}
+            <label className="labell">{this.props.name}
             <select value={this.state.value}onChange={this.handleChange}>
                 {this.props.options.map((option) => {
                     return(

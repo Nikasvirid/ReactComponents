@@ -19,10 +19,11 @@ class Date extends Component <DatePro, DateSt>{
     };
     render() {
         return(
-          <label className="">
+          <label className="labell">
             {this.props.name}
             <input type="date"value ={this.state.input}onChange={this.handleChange} />
           </label>  
         );
     }
 }
+export default Date;
