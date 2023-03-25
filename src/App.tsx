@@ -5,7 +5,7 @@ import './App.css';
 import Home from "./Home";
 import About from "./About";
 import Shop from "./Shop";
-import Form from "./Form";
+import Form from "./Forms/Form";
 import Error404 from "./Error404";
 import Header from "./Header";
 
