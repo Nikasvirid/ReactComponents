@@ -1,11 +1,11 @@
 //import { Component, JSXElementConstructor, Key, ReactElement, ReactFragment, ReactPortal } from "react";\
-import Iinput from "./Forms/Iinput";
+import Iinput from "./Iinput";
 import { Component } from "react";
-import Select from "./Forms/Select";
+import Select from "./Select";
 import { experience, gender } from "./data";
-import Date from "./Forms/Date";
-import Rradio from "./Forms/Rradio";
-import Validation from "./Forms/Validation";
+import Date from "./Date";
+import Rradio from "./Rradio";
+import Validation from "./Validation";
 
 
 
@@ -13,17 +13,14 @@ class Form extends Component {
  
     render() {
       return(<form>
-        <h2> ./Form</h2>
           <div className="form">
           <h2> Fill in the form data!</h2>
           <Iinput  name="First name:"/>
           <Select name="What's your gender:" options={gender}/>
-          <Date name="Date of completion:"/>
-          <br/>
+          <Date name="Date"/>
           Your experience:
           <Rradio experience={""}/>
-          <br/>
-          I accept the terms of the user agreement:
+          Agree:
           <input type="checkbox"/>
           Attach CV:
           <input type="file" />      
