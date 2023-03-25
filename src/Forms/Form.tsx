@@ -2,7 +2,7 @@
 import Iinput from "./Iinput";
 import { Component } from "react";
 import Select from "./Select";
-import { experience, gender } from "./data";
+import { experience, gender } from "../data";
 import Date from "./Date";
 import Rradio from "./Rradio";
 import Validation from "./Validation";
