@@ -30,4 +30,13 @@ describe ("App", () =>{
         );
         expect(screen.getByText('NotFoundpage Errr 404! Go')).toBeInTheDocument();
     });
-});
+     test('renders Form', () => {
+    render(
+      <MemoryRouter initialEntries={['./form']}>
+        <App />
+      </MemoryRouter>
+    );
+    expect(screen.getByText('Form')).toBeInTheDocument(); 
+      
+  });
+  });

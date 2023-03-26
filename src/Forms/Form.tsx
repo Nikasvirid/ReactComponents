@@ -13,9 +13,9 @@ class Form extends Component {
  
     render() {
       return(<form >
-        <h2> ./Form</h2>
-          <div className="form">
-          <h2> Fill in the form data!</h2>
+        <div><h2> Form</h2></div>
+           <div className="form">
+           <h2> Fill in the form data!</h2>
           <Iinput  name="First name:"/>
           <Select name="What's your gender:" options={gender}/>
           <Date name="Date of completion:"/>
