@@ -1,13 +1,11 @@
 import React from "react";
-import { Component } from "react";
 
- class Home extends Component {
+// eslint-disable-next-line react/prefer-stateless-function
+class Home extends React.Component {
   render() {
-    return(
+    return (
       <div className="cont_home">
-         
-          <h2> Bonjour!</h2>
-          
+        <h2> Bonjour!</h2>
       </div>
     );
   }
