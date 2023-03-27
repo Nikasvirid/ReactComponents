@@ -1,31 +1,25 @@
-/* eslint-disable prettier/prettier */
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
   extends: [
-    "airbnb",
-    "airbnb-typescript",
-    "airbnb/hooks",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
+    'airbnb',
+    'airbnb/hooks',
+    'airbnb-typescript',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
   ],
-  overrides: [
-    files ['*.spec.ts', 'test/unit/**/*.ts', 'test/e2e/**/*.ts'],
-  ],
-  parser: "@typescript-eslint/parser",
+  overrides: [],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    tsconfigRootDir: __dirname,
+    project: 'tsconfig.json',
   },
-  plugins: [
-    "react",
-    "@typescript-eslint",
-    "prettier",
-  ],
+  plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
