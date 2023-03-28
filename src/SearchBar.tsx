@@ -1,5 +1,7 @@
 function SearchBar() {
-  const UsersSearch = (e) => {};
+  const UsersSearch = (e: React.FormEvent<HTMLInputElement>) => {
+    e.preventDefault();
+  };
   return (
     <div className="App">
       <div className="container">
