@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import SearchBar from "./SearchBar";
 import CardList from "./CardList";
 
-class Blog extends React.PureComponent {
+class Blog extends React.Component {
   render() {
     return (
       <div>

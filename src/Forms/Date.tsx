@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 import { Component } from "react";
 
 type DateSt = {

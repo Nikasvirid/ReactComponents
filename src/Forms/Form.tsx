@@ -3,11 +3,10 @@ import React from "react";
 import Iinput from "./Iinput";
 import Select from "./Select";
 import { gender } from "../data";
-// eslint-disable-next-line import/no-named-as-default
 import Date from "./Date";
 import Rradio from "./Rradio";
 
-class Form extends React.PureComponent {
+class Form extends React.Component {
   render() {
     return (
       <form>
@@ -21,7 +20,7 @@ class Form extends React.PureComponent {
           <Date name="Date of completion:" />
           <br />
           Your experience:
-          <Rradio experience=" " />
+          <Rradio />
           <br />
           I accept the terms of the user agreement:
           <input type="checkbox" />

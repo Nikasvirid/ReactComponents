@@ -1,22 +1,18 @@
-import React from "react";
+import { Component } from "react";
 import { Link } from "react-router-dom";
 
-export default class Header extends React.PureComponent {
+
+class Header extends Component {
   render() {
-    return (
-      <>
-        <Link to="/Home" className="link" />
-        Home
-        <Link to="/About" className="link">
-          {" "}
-          About Us{" "}
-        </Link>
-        <Link to="/Shop" className="link" />
-        {this.props}
-        Shop
-        <Link to="/Form" className="link" />
-        Form
-      </>
+    return (<div>
+      <nav>
+        <Link to="/Home" className="link"> Home </Link>
+        <Link to="/About" className="link"> About Us </Link>
+        <Link to="/Shop" className="link"> Shop </Link>
+        <Link to="/Form" className="link"> Form </Link>
+      </nav>
+    </div>
     );
   }
 }
+export default Header;
