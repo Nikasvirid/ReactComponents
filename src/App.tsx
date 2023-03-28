@@ -12,16 +12,16 @@ import Header from "./Header";
 class App extends Component {
   render() {
     return (
-    <div>
-      <Header />
-      <Routes>
-        <Route path="/Home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/form" element={<Form />} />
-        <Route path="*" element={<Error404 />} />
-      </Routes>
-    </div>
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/Home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/form" element={<Form />} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
+      </div>
     );
   }
 }

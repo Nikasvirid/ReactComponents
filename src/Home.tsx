@@ -1,6 +1,5 @@
 import React from "react";
 
-// eslint-disable-next-line react/prefer-stateless-function
 class Home extends React.Component {
   render() {
     return (

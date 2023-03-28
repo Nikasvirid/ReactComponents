@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import SearchBar from "./SearchBar";
 import CardList from "./CardList";
 
-class Blog extends React.Component {
+class Blog extends Component {
   render() {
     return (
       <div>
