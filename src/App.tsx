@@ -18,7 +18,7 @@ class App extends Component {
           <Route path="/Home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/shop" element={<Shop />} />
-          <Route path="/form" element={<Form />} />
+          <Route path="form" element={<Form />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </div>

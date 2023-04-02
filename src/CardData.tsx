@@ -5,3 +5,14 @@ export interface CardProd {
   searchTerm: string;
   image: string;
 }
+
+export type Card = {
+  id: number;
+  image: string;
+  title: string;
+  valid: string;
+  lastName: string;
+  ingredient: string;
+  experience: string;
+  gender: string;
+};

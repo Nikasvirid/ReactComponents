@@ -78,5 +78,22 @@ nav {
     border-radius: 5px;
   }
 
+  
+  .users {
+    
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    width: 30%;
+  }
+
+  .accept {
+    box-shadow: 0px 0px 5px 2px #61dafb;
+  }
+  
+  .unaccept {
+    box-shadow: 0px 0px 5px 2px #ff6347;
+  }
+
 
  

@@ -136,6 +136,3 @@ export const data: CardProd[] = [
       "https://images.unsplash.com/photo-1559334417-a57bd929f003?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjIzfHxzaGlydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
   },
 ];
-export const gender = ["female", "masculine", "nauter"];
-
-export const experience = ["junior", "middle", "senior"];

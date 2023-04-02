@@ -16,6 +16,7 @@ class Iinput extends Component<InputPro, InputSt> {
 
   handleChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     this.setState({ input: e.target.value });
+    //console.log(e.target.value);
   };
 
   render() {
