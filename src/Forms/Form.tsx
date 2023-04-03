@@ -8,20 +8,17 @@ interface FormDataProps {
   handleCard: (card: CardeForm) => void;
   cards: number;
 }
-const Form = ({ handleCard, cards }: FormDataProps) => {
+const Form = ({ handleCard }: FormDataProps) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-    reset,
   } = useForm({ resolver, mode: "onSubmit" });
 
   const onSubmit: SubmitHandler<CardeForm> = (data) => {
     handleCard({
       ...data,
-      image: URL.createObjectURL(data.image[0]),
     });
-    reset();
   };
   //const officeLocation: string[] = ["Georgia", "Belarus", "Hungary"];
 

@@ -10,7 +10,7 @@ const Popup = (status: { showPopup: boolean }) => {
             : "wrapper-close popup__wrapper"
         }
       >
-        <div className="popup__text">Product card created</div>
+        <div className="popup">Product card created</div>
         <div className="popup__image"></div>
       </div>
     </div>
