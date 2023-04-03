@@ -11,8 +11,9 @@ export type Card = {
   image: string;
   title: string;
   valid: string;
-  lastName: string;
-  ingredient: string;
-  experience: string;
+  firstName: string;
+  date: string;
+  officeLocation: string;
   gender: string;
+  accept: boolean;
 };

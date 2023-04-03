@@ -1,42 +1,58 @@
 import React from "react";
-import { ICardDataForm } from "./FormData";
-import styles from "./form.module.css";
+import { CardeForm } from "./FormData";
 
-class CardDataForm extends React.Component<ICardDataForm> {
-  render() {
+interface CardFormProps {
+  cards: CardeForm[];
+}
+
+const CardForm = ({ cards }: CardFormProps) => {
+  if (cards.length === 0) {
     return (
-      <div className={styles.container}>
-        <div className={" "}>
-          <p className={" "}>
-            First Name:
-            <span className={styles.text}>{this.props.name}</span>
-          </p>
-          <p className={styles.title}>
-            Division Code:
-            <span className={" "}>{this.props.numbCode}</span>
-          </p>
-          <p className={styles.title}>
-            Registration date:
-            <span className={styles.text}>{this.props.registration}</span>
-          </p>
-          <p className={styles.title}>
-            Office location:
-            <span className={styles.text}>{this.props.select}</span>
-          </p>
-          <p className={styles.title}>
-            Gender:
-            <span className={styles.text}>{this.props.radio}</span>
-          </p>
-        </div>
-        <img
-          className={styles.img}
-          src={this.props.image}
-          alt="photo"
-          width="100px"
-        />
+      <div className="cards__error">
+        <p className="error__text">Cards not found</p>
       </div>
     );
   }
-}
+  return (
+    <>
+      {cards.map((card) => {
+        return (
+          <div className="form-card" key={card.indexId}>
+            <div className="form-card__img">
+              <img
+                src={card.image}
+                alt="fotoCard"
+                className="form-card__img"
+              ></img>
+            </div>
+            <div className=" ">{card.firstName}</div>
+            <div className=" ">
+              <p className="birth__title">Date registration:</p>
+              <p className="birth__text">{card.valid}</p>
+            </div>
+            <div className=" ">
+              <span className="form-card__span">Division code:</span>{" "}
+              {card.divisionCode}
+            </div>
+            <div className="form-card__info">
+              <div className="form-card__ingredient item">
+                <p className="item__title">{card.officeLocation}</p>
+                <p className="item__text">Office location</p>
+              </div>
+              <div className="form-card__cost item">
+                <p className="item__title">{card.gender}$;</p>
+                <p className="item__text">Gender</p>
+              </div>
+              <div className="form-card__house item">
+                <p className="item__title">{card.accept}</p>
+                <p className="item__text">Accept</p>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </>
+  );
+};
 
-export default CardDataForm;
+export default CardForm;
