@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import CardList from "./CardList";
-import Appi from "./SearchAPI";
+import SearchBar from "./SearchBar";
 
 class Blog extends Component {
   render() {
     return (
       <div>
-        <Appi />
+        <SearchBar />
         <h2 className="shoping"> Go! </h2>
         <CardList />
       </div>
