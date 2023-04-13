@@ -1,13 +1,12 @@
+import Appi from "./SearchAPI";
 import React from "react";
-import { Component } from "react";
 
- class Home extends Component {
+class Home extends React.Component {
   render() {
-    return(
+    return (
       <div className="cont_home">
-         
-          <h2> Bonjour!</h2>
-          
+        <h2> Bonjour!</h2>
+        <Appi />
       </div>
     );
   }
